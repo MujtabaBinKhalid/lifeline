@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/grp" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/snavbar"
+            android:icon="@drawable/ncfitness"
+            android:title="Need Your Suggestion?" />
+    </group>
+
+    <group android:id="@+id/grp1" >
+        <item
+            android:id="@+id/hairnav"
+            android:icon="@drawable/homeside"
+            android:title="Hair Styles" />
+
+        <item
+            android:id="@+id/sglassesnav"
+            android:icon="@drawable/homeside"
+            android:title="Sun Glasses" />
+
+        <item
+            android:id="@+id/clothnav"
+            android:icon="@drawable/homeside"
+            android:title="Clothes" />
+
+        <item
+            android:id="@+id/fwearnav"
+            android:icon="@drawable/homeside"
+            android:title="Foot Wear" />
+
+    </group>
+
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/exitapp"
+            android:icon="@drawable/exit"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question1"
+        android:visibility="visible"
+        android:background="#fff"
+        >
+
+
+        <TextView
+            android:id="@+id/qtagactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#1F728D"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="2 of 2" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aq1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/aq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qtag"
+                android:layout_marginTop="97dp"
+                android:layout_marginLeft="23dp"
+                android:textColor="#1F728D"
+                android:padding="3dp"
+                android:textSize="17sp"
+                android:text="What will be your Activity plan?"
+                android:layout_centerHorizontal="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:src="@drawable/mark"
+                android:padding="4dp"
+                android:id="@+id/tipactivity"
+                android:layout_marginTop="103dp"
+                android:layout_marginLeft="3dp"
+                android:onClick="Tooltipmessage"
+
+
+                />
+
+        </LinearLayout>
+
+
+
+        <Spinner
+            android:id="@+id/activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:drawSelectorOnTop="true"
+            android:background="@drawable/border_style"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/activity"
+            android:layout_marginTop="6dp"
+            android:text="@string/buttonname"
+            android:textColor="#1f728d"
+            android:background="@drawable/border_style"
+            android:onClick="createplan"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <!--<RelativeLayout-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/question2"-->
+        <!--android:background="#fff">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/qtag"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#1f728d"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="Finalzing Your Plan...." />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/aqqq"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/qtag"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:textColor="#1f728d"-->
+            <!--android:layout_marginLeft="72dp"-->
+            <!--android:textSize="17sp"-->
+            <!--android:text="Enter your Plan name!"-->
+             <!--/>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/toolbarfirst"-->
+            <!--android:layout_below="@+id/qtag"-->
+            <!--android:layout_marginTop="125dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--&gt;-->
+            <!--<EditText-->
+                <!--android:id="@+id/pname"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Plan name."-->
+                <!--android:maxLines="1"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:layout_marginRight="3dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_above="@id/lastname"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:background="@drawable/textfield_borders"-->
+                <!--android:ems="10"-->
+                 <!--/>-->
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:src="@drawable/mark"-->
+                <!--android:layout_marginTop="45dp"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:id="@+id/ptip"-->
+                <!--android:onClick="Tooltipmessage"-->
+
+
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/loginsup"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:layout_below="@+id/toolbarfirst"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="CreatePlan"-->
+            <!--android:background="@drawable/border_style"-->
+            <!--android:textColor="#1f728d"-->
+            <!--android:onClick="creating"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+
+
+</RelativeLayout>
+

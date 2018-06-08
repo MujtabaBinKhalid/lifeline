@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="360dp"
+    android:background="#fff"
+    android:paddingBottom="15dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:id="@+id/itemname"
+        android:text=""
+        android:textColor="#1f728d"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fats"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="118dp"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:id ="@+id/fatsbtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:enabled="false"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="5dp"
+
+        android:background="@drawable/crimsonredroundbuttons"
+        android:padding="15dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="proteins"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="118dp"
+        android:layout_marginLeft="124dp"/>
+    <Button
+        android:id ="@+id/proteinsbtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:enabled="false"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="115dp"
+        android:text=""
+
+        android:background="@drawable/navyblueroundbuttons"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="carbo"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="118dp"
+        android:layout_marginLeft="239dp"/>
+
+    <Button
+        android:id ="@+id/carbobtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:enabled="false"
+        android:textColor="#fff"
+        android:text=""
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="217dp"
+
+        android:background="@drawable/greenroundbutton"
+        android:padding="15dp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:layout_marginTop="160dp"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:textColor="#1f728d"
+        android:textColorHint="#000"
+        android:layout_above="@id/lastname"
+        android:gravity="center_horizontal"
+        android:background="@drawable/textfield_borders"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:textSize="12dp"
+        android:padding="5dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/tipweight"
+        />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:layout_marginTop="220dp"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:textColor="#1f728d"
+        android:textColorHint="#000"
+        android:layout_above="@id/lastname"
+        android:gravity="center_horizontal"
+        android:background="@drawable/textfield_borders"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12dp"
+        android:padding="5dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/textamount"
+        />
+
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_below="@+id/toolbarlast"
+        android:layout_marginTop="272dp"
+        android:text="Calculate"
+        android:background="@drawable/border_style"
+        android:textColor="#1f728d"
+        android:onClick="calculating"
+        />
+
+</RelativeLayout>

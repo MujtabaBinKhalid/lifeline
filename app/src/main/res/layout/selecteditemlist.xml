@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="84dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        app:cardBackgroundColor="#f7f7f7"
+        android:id="@+id/cardviewsdp"
+        android:clickable="true"
+        android:layout_margin="9dp"
+
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dietname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            tools:text="Diet name" />
+
+        <TextView
+            android:id="@+id/tdc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/planname"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="19dp"
+
+            tools:text="Total calories" />
+
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

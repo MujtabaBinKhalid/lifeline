@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:id="@+id/layout"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        tools:context="com.lifeline.fyp.fyp.diet.CategoricallyFoodItems"
+        android:id="@+id/drawer"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="search"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff"
+
+                android:background="@drawable/searchbar"
+                android:textColorHint="#000"
+                android:ems="15"
+                android:iconifiedByDefault="false"
+                >
+
+                <requestFocus />
+
+            </SearchView>
+
+            <ExpandableListView android:id="@+id/expandableList"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/search"
+                android:layout_marginBottom="62dp"/>
+            <LinearLayout
+                android:id="@+id/fragment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:weightSum="5"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/fitness"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ncfitness"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+                <ImageButton
+                    android:id="@+id/apnadeit2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/nutriicon"
+                    android:onClick="DietNav"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+
+                <ImageButton
+                    android:id="@+id/sweethome2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:src="@drawable/nchome"/>
+
+                <ImageButton
+                    android:id="@+id/dietlifestyle2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:onClick="LifestyleNav"
+                    android:src="@drawable/nclifestyle" />
+
+                <ImageButton
+                    android:id="@+id/profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:src="@drawable/ncuser"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <android.support.design.widget.NavigationView
+            app:headerLayout="@layout/nav_bar_header"
+            android:id="@+id/navmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity= "start"
+            app:menu="@menu/diet_menu"
+            android:background="#fff"
+            app:itemTextColor="#1f728d"
+            app:itemIconTint="#1f728d"
+
+            >
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+    <!--   Adding the second layout.-->
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,396 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.lifeline.fyp.fyp.diet.Reports">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:id="@+id/layoutreports2">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="163dp"
+        android:id="@+id/reports2"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:id="@+id/D"
+            android:text="Daily"
+            android:textSize="13dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Monthly"
+            android:id="@+id/M2"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:textSize="13dp"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekly Report"
+        android:textSize="20dp"
+        android:padding="3dp"
+        android:id="@+id/wer"
+        android:textColor="#1f728d"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caltext1111"
+        android:textColor="#000"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:text="Calories Taken: "
+        android:layout_marginTop="128dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caltext1"
+        android:layout_marginLeft="110dp"
+        android:textColor="#1f728d"
+        android:textStyle="bold"
+        android:layout_marginTop="129dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Period: "
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/datetext1111"
+        android:layout_marginTop="155dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1f728d"
+        android:id="@+id/datetext1"
+        android:textStyle="bold"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="110dp"/>
+
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:dividerHeight="3dp"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/rvvv">
+
+
+    </ExpandableListView>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/onlyerrors">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="163dp"
+            android:id="@+id/reports3"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:id="@+id/Dz"
+                android:text="Daily"
+                android:textSize="13dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Weekly"
+                android:id="@+id/Mzz"
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:textSize="13dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No reports available"
+            android:id="@+id/givingtext"
+            android:textStyle="bold"
+            android:textColor="#1f728d"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="80dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/layoutholding"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="140dp"
+            android:id="@+id/reports"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:id="@+id/W"
+                android:text="Weekly"
+                android:textSize="13dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Monthly"
+                android:id="@+id/M"
+
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:textSize="13dp"/>
+
+        </RadioGroup>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yesterday Report"
+            android:textSize="20dp"
+            android:padding="3dp"
+            android:textColor="#1f728d"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/caltext11"
+            android:textColor="#000"
+            android:visibility="visible"
+            android:textStyle="bold|italic"
+            android:textSize="15dp"
+            android:text="Calories Taken: "
+            android:layout_marginTop="128dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/caltext"
+            android:layout_marginLeft="106dp"
+            android:textColor="#1f728d"
+            android:textStyle="bold"
+            android:layout_marginTop="129dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:textSize="15dp"
+            android:id="@+id/datetext11"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="167dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1f728d"
+            android:id="@+id/datetext"
+            android:textStyle="bold"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="209dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of food taken"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="78dp"
+            android:textStyle="bold"
+            android:textColor="#1f728d"
+            android:textSize="17dp"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="215dp"
+            android:id="@+id/lastday"
+            android:layout_marginBottom="57dp"
+            android:background="@drawable/listborder"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+
+        </ListView>
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/layoutholdingerr">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="140dp"
+            android:id="@+id/reportserr"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:id="@+id/WE"
+                android:text="Weekly"
+                android:textSize="13dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Monthly"
+                android:id="@+id/ME"
+
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:textSize="13dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO reports available, first create plan."
+            android:textColor="#1f728d"
+            android:id="@+id/error"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="76dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment3"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="5"
+
+        >
+        <ImageButton
+            android:id="@+id/fitness1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/fitnessicon"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/nutrition1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ncnutri"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/home1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/nchome"/>
+
+        <ImageButton
+            android:id="@+id/lifestyle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/nclifestyle" />
+
+        <ImageButton
+            android:id="@+id/profile1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ncuser"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

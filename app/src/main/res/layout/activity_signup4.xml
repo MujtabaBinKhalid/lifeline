@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/qtag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#1f728d"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/q4" />
+
+        <TextView
+            android:id="@+id/aq1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qtag"
+            android:layout_marginTop="30dp"
+            android:textColor="#1f728d"
+            android:textSize="17sp"
+            android:text="@string/spq4"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarusername"
+            android:layout_below="@+id/qtag"
+            android:layout_marginTop="95dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="#fff"
+                android:textColorHint="#000"
+                android:layout_above="@id/email"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textfield_borders"
+                android:ems="10"
+                android:inputType="textPersonName" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/mark"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tip3"
+                android:onClick="Hints"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbaremail"
+            android:layout_below="@+id/toolbarusername"
+            android:layout_marginTop="-15dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="#fff"
+                android:textColorHint="#000"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textfield_borders"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/mark"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tip4"
+                android:onClick="Hints"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbaremail"
+            android:layout_marginTop="16dp"
+            android:text="@string/buttonname"
+            android:background="@drawable/border_style"
+            android:textColor="#1f728d"
+            android:onClick="signup5"
+            />
+    </RelativeLayout>
+
+
+</ScrollView>
+

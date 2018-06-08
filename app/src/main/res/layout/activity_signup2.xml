@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/qtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#1f728d"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/q2" />
+
+    <TextView
+        android:id="@+id/aq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtag"
+        android:layout_marginTop="30dp"
+        android:textColor="#1f728d"
+        android:textSize="17sp"
+        android:text="@string/spq2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstname"
+        android:layout_alignStart="@+id/firstname"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:background="@drawable/textfield_borders"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Select Date of Birth"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonname"
+        android:background="@drawable/border_style"
+        android:textColor="#1f728d"
+        android:onClick="signup3"
+        />
+</RelativeLayout>

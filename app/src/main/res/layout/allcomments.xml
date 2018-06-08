@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tapping"
+        android:paddingBottom="-15dp"
+        android:layout_margin="4dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/dp"
+            android:padding="6dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="22dp"
+            android:text="Name"
+            android:id="@+id/fullname"
+            android:textColor="#1f728d"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="comments"
+            android:id="@+id/content"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/textshare"
+
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedittext"
+            android:textSize="15dp"
+            android:gravity="top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:id="@+id/imageviewpic"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:id="@+id/uploadphoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo ! "
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundcorerbuttons"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="34dp" />
+
+        <Button
+            android:id="@+id/postthestatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post Status ! "
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundcorerbuttons"
+            android:layout_marginTop="330dp"
+            android:layout_marginBottom="34dp" />
+    </RelativeLayout>
+</LinearLayout>

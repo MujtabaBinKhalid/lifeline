@@ -1,0 +1,279 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lifeline.fyp.fyp.lifestyle.LifeStyle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#f7f7f7">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="6"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hairstylesuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimagea"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/starch"
+
+                    android:text="Starches"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Starch"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/sunglassessuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/hairstylesuggestions"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimageb"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@drawable/fruit"
+
+                    android:text="Fruit and fruit juices"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Fruit &amp; fruit juices"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/clothingsuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/sunglassessuggestions"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#d7d7d7">
+
+                <Button
+                    android:id="@+id/cardimagec"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/milk"
+
+                    android:text="Milk an Yougurt"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Dairy"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/footwearsuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/clothingsuggestions"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimaged"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/desserts"
+
+                    android:text="Sweet desserts and other carbohydrates"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Desserts"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/footwearsuggestions1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/footwearsuggestions"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimagee"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/meats"
+
+                    android:text="Sweet desserts and other carbohydrates"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Meats"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/footwearsuggestions2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/footwearsuggestions1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimagef"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/fats"
+
+                    android:text="Fats"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Fats"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/fragment3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="5"
+
+        >
+        <ImageButton
+            android:id="@+id/fitness"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ncfitness"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/apnadiet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:src="@drawable/nutriicon"
+
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/sweethome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/nchome"/>
+
+        <ImageButton
+            android:id="@+id/dietlifestyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/nclifestyle" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ncuser"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

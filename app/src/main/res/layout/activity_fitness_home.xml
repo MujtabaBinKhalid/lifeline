@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lifeline.fyp.fyp.fitness.FitnessHome">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notactive">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add plan and start working !"
+            android:layout_marginLeft="55dp"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            android:textColor="#1f728d"
+            android:id="@+id/tipnutri"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/fabcreate"
+            android:visibility="invisible"
+            android:src="@drawable/rightarrow"
+            app:backgroundTint="#1f728d"
+            android:layout_marginBottom="60dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

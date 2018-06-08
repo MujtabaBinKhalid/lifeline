@@ -1,0 +1,372 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.lifeline.fyp.fyp.diet.DietPlans">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/notactive">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add plan and start working !"
+                android:layout_marginLeft="55dp"
+                android:textSize="18dp"
+                android:textColor="#1f728d"
+                android:id="@+id/tipnutri"
+                android:textStyle="bold"
+                android:layout_marginTop="200dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:id="@+id/fabcreate"
+                android:src="@drawable/rightarrow"
+                app:backgroundTint="#1f728d"
+                android:layout_marginBottom="60dp"/>
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/active">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:text="111"
+                    android:textStyle="bold"
+                    android:textColor="#1f728d"
+                    android:layout_marginTop="99dp"
+                    android:id="@+id/planrecentname"
+                    android:layout_marginLeft="120dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Fitness Plan"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:id="@+id/fittitle"
+                    android:background="@drawable/profilebuttons"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginLeft="180dp"
+                    />
+
+                <Button
+                    android:id ="@+id/calintakebtn"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:enabled="false"
+                    android:layout_marginTop="118dp"
+                    android:layout_marginLeft="15dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/crimsonredroundbuttons"
+                    android:padding="15dp"
+                    />
+
+                <Button
+                    android:id ="@+id/weeksbtn"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:enabled="false"
+                    android:textColor="#fff"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="118dp"
+                    android:layout_marginLeft="165dp"
+
+                    android:background="@drawable/navyblueroundbuttons"
+                    android:padding="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calorie intake / day"
+                    android:textSize="12dp"
+                    android:textColor="#990000"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="268dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weeks Remaining"
+                    android:textSize="12dp"
+                    android:textColor="#000080"
+                    android:layout_marginLeft="195dp"
+                    android:layout_marginTop="268dp"
+                    />
+
+
+
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:textColor="#fff"
+                    android:id="@+id/sessionbtn"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Start Session"
+                    android:layout_marginLeft="65dp"
+                    android:background="@drawable/buttondesign"
+                    android:layout_marginTop="310dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View today sessions detail"
+                    android:layout_marginTop="370dp"
+                    android:layout_marginLeft="73dp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:textColor="#1f728d"
+                    android:id="@+id/sessiondetail"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/stats">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="73dp"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/datetext"
+                android:text="Date:"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="113dp"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textColor="#1f728d"
+                android:textSize="13dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/date"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="73dp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textColor="#ff0000"
+                android:textSize="13dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/errorhere"
+                />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="invisible"
+
+                android:id="@+id/chartpie"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="95dp">
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="195dp"
+                android:layout_marginLeft="83dp"
+                android:textStyle="bold|italic"
+                android:visibility="invisible"
+                android:layout_marginRight="3dp"
+                android:id="@+id/messagehere"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="222dp"
+                android:layout_marginLeft="105dp"
+                android:visibility="invisible"
+                android:text="Start Session?"
+                android:textStyle="bold"
+                android:textColor="#1f728d"
+                android:clickable="true"
+                android:layout_marginRight="3dp"
+                android:id="@+id/startsessionagain"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide Session detail"
+                android:layout_marginTop="365dp"
+                android:layout_marginLeft="24dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:textColor="#1f728d"
+                android:id="@+id/hidedetails"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Session detail"
+                android:layout_marginTop="365dp"
+                android:layout_marginLeft="164dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:textColor="#1f728d"
+                android:id="@+id/share"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/negativestats"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You aren't following the plan correctly ! "
+                android:textStyle="bold"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="60dp"
+                android:textColor="#ff0000"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:weightSum="5"
+
+            >
+            <ImageButton
+                android:id="@+id/fitness"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ncfitness"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <ImageButton
+                android:id="@+id/apnadiet3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/nutriicon"
+
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <ImageButton
+                android:id="@+id/sweethome3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle"
+                android:src="@drawable/nchome"/>
+
+            <ImageButton
+                android:id="@+id/lifestylediet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle"
+
+                android:src="@drawable/nclifestyle" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle"
+                android:src="@drawable/ncuser"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

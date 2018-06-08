@@ -1,0 +1,214 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lifeline.fyp.fyp.lifestyle.LifeStyle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#fff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:weightSum="4"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hairstylesuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimage1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/newhairstyle"
+
+                    android:text="hairStyle"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Hair Styles"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/sunglassessuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/hairstylesuggestions"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimage2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@drawable/glasses"
+
+                    android:text="sunglasses"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Sun Glasses"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/clothingsuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/sunglassessuggestions"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#d7d7d7">
+
+                <Button
+                    android:id="@+id/cardimage3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/clothes"
+
+                    android:text="clothes"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Clothes"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/footwearsuggestions"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/clothingsuggestions"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#fff">
+
+                <Button
+                    android:id="@+id/cardimage4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/joggers"
+
+                    android:text="footwear"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="89dp"
+                    android:gravity="center_horizontal"
+                    android:text="Foot Wear"
+                    android:alpha = ".75"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/fragment3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="5"
+
+        >
+        <ImageButton
+            android:id="@+id/fitness"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ncfitness"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/diet2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ncnutri"
+
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <ImageButton
+            android:id="@+id/home2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/nchome"/>
+
+        <ImageButton
+            android:id="@+id/lifestyle2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:src="@drawable/lifestyleicon" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ncuser"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

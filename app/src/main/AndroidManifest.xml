@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lifeline.fyp.fyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lifeline"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".classes.StartingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".classes.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".classes.NotificationService"
+            android:exported="false" />
+
+        <receiver android:name=".classes.NotificationReceiver" />
+
+        <activity
+            android:name=".lifestyle.LifeStyle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lifestyle.AgeQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lifestyle.GenderQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lifestyle.HeightQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lifestyle.WeightQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".lifestyle.SkinColorQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup.SignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Signup.SignUp2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup.SignUp3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup.SignUp4"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Signup.SignUp5"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".diet.DietMain"
+            android:screenOrientation="portrait" />
+        <activity android:name=".lifestyle.HairTypeQuestion" />
+        <activity android:name=".lifestyle.FaceShapeQuestion" />
+        <activity android:name=".lifestyle.FashionCategoryQuestion" />
+        <activity android:name=".lifestyle.suggestions.ClothSuggestions" />
+        <activity android:name=".lifestyle.ClothToneQuestion" />
+        <activity android:name=".lifestyle.suggestions.CombinedSuggestions" />
+        <activity android:name=".lifestyle.DetailedSkinTip" />
+        <activity android:name=".lifestyle.suggestions.HairStyleSuggestions" />
+        <activity android:name=".diet.CategoricallyFoodItems" />
+        <activity android:name=".diet.BMICalculator" />
+        <activity android:name=".diet.DietPlansQuestions2" />
+        <activity android:name=".diet.CreatedPlan" />
+        <activity android:name=".lifestyle.suggestions.FootwearSuggestions" />
+        <activity android:name=".diet.DietPlanQuestion1" />
+        <activity android:name=".diet.FinalzingPlan" />
+        <activity android:name=".diet.DietSession" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".fitness.FitnessSession"
+            android:label="@string/title_activity_fitness_session" />
+        <activity android:name=".fitness.FitnessPlan" />
+        <activity android:name=".fitness.FitnessHome" />
+        <activity android:name=".diet.FitnessDietPlan" />
+        <activity android:name=".fitness.ReportsFitness" />
+        <activity android:name=".socialMedia.UserProfile" />
+        <activity android:name=".socialMedia.FriendsProfile" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider2111182672498229"
+            android:exported="true" />
+
+        <activity android:name=".socialMedia.Allnotification" />
+        <activity android:name=".socialMedia.SpecificNotification" />
+        <activity android:name=".socialMedia.Friend_List" />
+        <activity android:name=".classes.Verification" />
+        <activity android:name=".lifestyle.ShadesTone" />
+        <activity android:name=".lifestyle.ShoeTone" />
+        <activity android:name=".socialMedia.PendingRequest"></activity>
+    </application>
+
+</manifest>

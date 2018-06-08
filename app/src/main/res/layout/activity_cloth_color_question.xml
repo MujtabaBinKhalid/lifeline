@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <TextView
+        android:id="@+id/qtagclothcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/q4"
+        android:textColor="#1F728D"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/aq9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:text=" Select Your Cloth Color"
+        android:textColor="#1F728D"
+        android:textSize="17sp" />
+
+
+    <Spinner
+        android:id="@+id/clothcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border_style"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clothcolor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border_style"
+        android:onClick="Q5"
+        android:text="@string/buttonname"
+        android:textColor="#1f728d"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lifeline.fyp.fyp.socialMedia.Friend_List">
+
+
+    <!--Friend list-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/friendslayoutwithpending">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending Requests"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:id="@+id/pendingrequesttext"
+                android:textSize="16dp"
+                android:textColor="#1f728d"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="147dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:id="@+id/pendingrequestnumber"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/pendingrequest"
+                android:background="@drawable/listborder"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="300dp"
+                android:paddingBottom="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:id="@+id/friendlisttext"
+                android:textSize="16dp"
+                android:textColor="#1f728d"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="72dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:id="@+id/friendlistnumber"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="#ECEFF1"
+                android:id="@+id/friendlist"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginBottom="60dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/nofriend"
+                android:text="You have no friends !"
+                android:layout_marginLeft="82dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="270dp"
+                android:layout_marginBottom="60dp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/friendslayout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Pending Requests"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="165dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:background="@drawable/btnborders"
+                android:id="@+id/viewpending"
+                android:padding="4dp"
+                android:textSize="13dp"
+
+                android:textColor="#1f728d"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:id="@+id/friendlisttext2"
+                android:textSize="16dp"
+                android:textColor="#1f728d"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="77dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:id="@+id/friendlistnumber2"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="#ECEFF1"
+                android:id="@+id/friendlist2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="60dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/nofriend2"
+                android:text="You have no friends !"
+                android:layout_marginLeft="82dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="270dp"
+                android:layout_marginBottom="60dp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!--Searching friend-->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/seachingfriend">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recylcerviewfriends"
+            android:layout_marginBottom="75dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search your friend"
+            android:id="@+id/searchingtext"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="#1f728d"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

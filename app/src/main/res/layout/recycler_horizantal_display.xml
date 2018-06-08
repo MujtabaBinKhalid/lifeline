@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="165dp"
+        android:layout_height="220dp"
+        android:id="@+id/cardview"
+        android:clickable="true"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/fooditems"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="#000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/fats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total fats: "
+            android:layout_marginTop="160dp"
+            android:textColor="#1f728d"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/proteins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total proteins: "
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="5dp"
+
+            android:textColor="#1f728d"
+            android:textSize="15dp"
+            />
+
+    </android.support.v7.widget.CardView>
+
+

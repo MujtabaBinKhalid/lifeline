@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/bmicalulatorrrr"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/qtag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#1f728d"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="BMI-CALCULATOR" />
+
+        <TextView
+            android:id="@+id/aq1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qtag"
+            android:layout_marginTop="30dp"
+            android:textColor="#1f728d"
+            android:layout_marginLeft="5dp"
+            android:textSize="17sp"
+            android:text="Enter your Height &amp; Weight"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarfirst"
+            android:layout_below="@+id/qtag"
+            android:layout_marginTop="95dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Weight(kg)"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="#fff"
+                android:textColorHint="#000"
+                android:layout_above="@id/lastname"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textfield_borders"
+                android:ems="10"
+                android:inputType="number" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/mark"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tipweight"
+                android:onClick="Tooltipmessage"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarlast"
+            android:layout_below="@+id/toolbarfirst"
+            android:layout_marginTop="-15dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Height (cm)"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="#fff"
+                android:textColorHint="#000"
+                android:layout_above="@id/lastname"
+                android:gravity="center_horizontal"
+                android:background="@drawable/textfield_borders"
+                android:ems="10"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:inputType="number" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/mark"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/tipheight"
+                android:onClick="Tooltipmessage"
+
+
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="100dp"
+            android:layout_below="@+id/toolbarlast"
+            android:layout_marginTop="16dp"
+            android:text="Calculate"
+            android:background="@drawable/border_style"
+            android:textColor="#1f728d"
+            android:onClick="calculating"
+            />
+    </RelativeLayout>
+
+</ScrollView>
+
+

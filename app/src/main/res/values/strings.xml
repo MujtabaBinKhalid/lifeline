@@ -1,0 +1,130 @@
+<resources>
+    <string name="facebook_app_id">2111182672498229</string>
+    <string name="facebook_login_protocol_scheme">fb2111182672498229</string>
+    <string name="app_name">Life Line</string>
+    <string name="buttonname">Next </string>
+    <string name="buttonlogin">Login </string>
+
+    <string name="forgettag">Forget  login details? </string>
+    <string name="helpsignin"> <b>Get help signing in </b> </string>
+
+
+    <string name="email"> Email </string>
+    <string name="passwordfield">Password </string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+    <string name="firstname">Firstname </string>
+    <string name="lastname">Lastname </string>
+    <string name="username">Username </string>
+
+    <string name="dplans">Diet plans</string>
+
+
+    <string name="statement">Don\'t have an account? </string>
+    <string name="signup"><b>Sign up </b> </string>
+
+    <string name="q1">1 of 5</string>
+    <string name="q2">2 of 5</string>
+    <string name="q3">3 of 5</string>
+    <string name="q4">4 of 5</string>
+    <string name="q5">5 of 5</string>
+
+    <string name="cpassword">Confirmed Password</string>
+
+
+    <string name="aq1">Welcome,Please Select Your Age Group</string>
+    <string name="aq2"> Select Your Gender</string>
+    <string name="aq3"> Select Your Height</string>
+    <string name="aq4"> Select Your Weight Range in (Kgs)</string>
+    <string name="aq5"> Select Your Skin Colour</string>
+    <string name="aq6"> Welcome,Please Select Your Hair Type</string>
+    <string name="aq7"> Select Your Face Shape</string>
+    <string name="aq8"> Select Dressing Category</string>
+    <string name="aq9"> Select Your Cloth Color</string>
+
+    <string name="spq1"> What\'s your name?</string>
+    <string name="spq2"> What\'s your DOB?</string>
+    <string name="spq3"> What\'s your gender?</string>
+    <string name="spq4"> What\'s your username and email?</string>
+    <string name="spq5"> What\'s Your Password?</string>
+
+
+    <string-array name="agegroups">
+        <item>15-18</item>
+        <item>19-23</item>
+        <item>24-30</item>
+        <item>31-45</item>
+        <item>46-60</item>
+        <item>61 onwards</item>
+    </string-array>
+
+
+    <string-array name="activityname">
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Moderatetely Active</item>
+        <item>Very Active</item>
+        <item>Extra Active</item>
+    </string-array>
+
+
+    <string-array name="menhair">
+        <item>Straight Hair</item>
+        <item>Wavy Hair</item>
+        <item>Curly Hair</item>
+
+    </string-array>
+
+    <string-array name="femalehair">
+        <item>Straight Hair</item>
+        <item>Wavy Hair</item>
+        <item>Curly Hair</item>
+
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="weightrange">
+        <item>35-44</item>
+        <item>45-54</item>
+        <item>55-70</item>
+        <item>71-85</item>
+        <item>86-100</item>
+        <item>101-125</item>
+        <item>126 onwards</item>
+
+
+    </string-array>
+
+
+    <string name="title_activity_diet">Diet</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string-array name="fashion_design">
+        <item>Casual</item>
+        <item>Formal</item>
+    </string-array>
+
+
+    <string-array name="cloth_tone">
+        <item>Light Colors</item>
+        <item>Dark Colors</item>
+    </string-array>
+
+
+    <string-array name="shadestone">
+        <item>Warm</item>
+        <item>Cool</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fitness_session">Map</string>
+
+</resources>

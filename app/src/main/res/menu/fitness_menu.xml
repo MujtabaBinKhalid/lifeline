@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/runningmenu" android:title="Running" android:icon="@drawable/homeside">
+
+    </item>
+    <item android:id="@+id/cyclingmenu"  android:title="Cycling" android:icon="@drawable/homeside">
+
+    </item>
+
+
+    <item android:id="@+id/reportsfit" android:visible="false" android:title="Running Reports" android:icon="@drawable/settings">
+
+    </item>
+
+    <item android:id="@+id/reportsfit1" android:visible="false" android:title="Cycling Reports" android:icon="@drawable/settings">
+
+    </item>
+
+
+    <item android:id="@+id/reportsfit2" android:visible="false" android:title="Exercise Reports" android:icon="@drawable/settings">
+
+
+    </item>
+
+    <item android:id="@+id/paid" android:visible="false" android:title="paid version" android:icon="@drawable/ic_explore_white_24dp">
+
+    </item>
+    <item android:id="@+id/logoutfit" android:title="logout" android:icon="@drawable/exit">
+
+    </item>
+</menu>

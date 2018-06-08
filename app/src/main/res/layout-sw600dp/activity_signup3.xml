@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/qtag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#1f728d"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/q3" />
+
+    <TextView
+        android:id="@+id/spq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtag"
+        android:layout_marginTop="30dp"
+        android:textColor="#1f728d"
+        android:textSize="17sp"
+        android:text="@string/spq3"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:layout_alignLeft="@+id/spq3"
+        android:layout_alignStart="@+id/spq3"
+        android:layout_below="@id/spq3"
+        android:padding="13dp"
+
+
+
+        >
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spq3"
+            android:layout_alignStart="@+id/spq3"
+            android:layout_above="@id/radioF"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:text="male"
+            android:checked="false"
+            android:padding="10dp"
+            android:textColor="#1f728d"/>
+
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spq3"
+            android:layout_alignStart="@+id/spq3"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="female"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:checked="false"
+            android:textColor="#1f728d"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonname"
+        android:background="@drawable/border_style"
+        android:textColor="#1f728d"
+        android:onClick="signup4"
+        />
+
+</RelativeLayout>

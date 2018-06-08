@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:visibility="invisible"
+    tools:context="com.lifeline.fyp.fyp.socialMedia.Allnotification">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Notifications"
+        android:textSize="19dp"
+        android:id="@+id/allnotification"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="#1f728d"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification"
+        android:background="@drawable/card_background"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="75dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No new Notification"
+        android:textSize="19dp"
+        android:visibility="invisible"
+        android:id="@+id/newnotification"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="#1f728d"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

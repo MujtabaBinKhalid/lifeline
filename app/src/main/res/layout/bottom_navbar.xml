@@ -1,0 +1,61 @@
+<LinearLayout
+    android:id="@+id/fragment2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:weightSum="5"
+
+    >
+    <ImageButton
+        android:id="@+id/fitness"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/fitnessicon"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <ImageButton
+        android:id="@+id/nutrition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/nutriicon"
+        android:onClick="DietNav"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?android:attr/borderlessButtonStyle"
+        android:src="@drawable/homeicon"/>
+
+    <ImageButton
+        android:id="@+id/lifestyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?android:attr/borderlessButtonStyle"
+        android:onClick="LifestyleNav"
+        android:src="@drawable/lifestyleicon" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?android:attr/borderlessButtonStyle"
+        android:src="@drawable/usericon"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_border"
+    android:layout_height="wrap_content"
+    android:paddingBottom="18dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/caltext11"
+            android:textColor="#000"
+            android:visibility="visible"
+            android:textStyle="bold|italic"
+            android:textSize="15dp"
+            android:text="Date: "
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datetext"
+            android:layout_marginLeft="80dp"
+            android:textColor="#1f728d"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"/>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/image1"
+            android:visibility="visible"
+            android:background="@drawable/distance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:id="@+id/text1"
+
+            android:textColor="#1f728d"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:id="@+id/text2"
+
+            android:textColor="#1f728d"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:layout_marginTop="54dp"
+            android:layout_marginLeft="205dp"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:id="@+id/text3"
+
+            android:textColor="#1f728d"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:layout_marginTop="102dp"
+            android:layout_marginLeft="205dp"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:id="@+id/text4"
+
+            android:textColor="#1f728d"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/image2"
+            android:visibility="visible"
+            android:background="@drawable/time"/>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/image3"
+            android:visibility="visible"
+            android:background="@drawable/speed"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/image4"
+            android:visibility="visible"
+            android:background="@drawable/calorie"/>
+
+
+    </RelativeLayout>
+
+
+

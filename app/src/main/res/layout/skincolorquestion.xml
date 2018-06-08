@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+    <TextView
+        android:id="@+id/qtagskin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#1F728D"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/q5" />
+
+    <TextView
+        android:id="@+id/aq5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtag"
+        android:layout_marginTop="62dp"
+        android:textColor="#1F728D"
+        android:textSize="17sp"
+        android:text="@string/aq5"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aq5"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+
+
+        android:id="@+id/skincolors"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/skincolor1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00000000"
+                android:text="white"
+                android:background ="@drawable/white"
+                android:onClick="NextQuestion"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/skincolor2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00000000"
+                android:text="pale"
+                android:background ="@drawable/pale"
+                android:onClick="NextQuestion"
+                style="?android:attr/borderlessButtonStyle"
+                />
+            <Button
+                android:id="@+id/skincolor3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00000000"
+                android:text="tanned"
+                android:onClick="NextQuestion"
+                android:background ="@drawable/tanned"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/skincolor4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00000000"
+                android:text="brown"
+                android:background ="@drawable/brown"
+                android:onClick="NextQuestion"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/skincolor5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00000000"
+                android:text="dbrown"
+                android:background ="@drawable/darkbrown"
+                android:onClick="NextQuestion"
+                style="?android:attr/borderlessButtonStyle"
+                />
+            <Button
+                android:id="@+id/skincolor6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#00000000"
+                android:text="black"
+                android:onClick="NextQuestion"
+                android:background ="@drawable/black"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
